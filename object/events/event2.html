@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM EVENT</title>
+  </head>
+  <body>
+    <h1 class="p">Hello , World</h1>
+    <button id="stop">stop</button>
+  </body>
+  <script>
+   
+    const paragraph = function () {
+      document.querySelector(".p").innerHTML = "I am Anurag";
+    };
+    
+    const changetext = setTimeout(paragraph, 2000);
+
+    document.querySelector("#stop").addEventListener("click", function () {
+      clearTimeout(changetext);
+      console.log("stopped");
+    });
+  </script>
+</html>

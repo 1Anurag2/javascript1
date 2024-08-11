@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="text">Hello , World</h1>
+    <button class="start">start</button>
+    <button class="stop">stop</button>
+  </body>
+  <script>
+    const value = function(){
+         document.querySelector('.text').innerHTML = "I am Anurag";
+    }
+    document.querySelector('.start').addEventListener('click',function(){
+        const changetext = setInterval(value,1000)
+    })
+
+    document.querySelector('.stop').addEventListener('click',function(){
+        const changetext = clearTimeout(value,1000)
+    })
+  </script>
+</html>
