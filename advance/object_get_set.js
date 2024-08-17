@@ -5,7 +5,7 @@ function User(email, password){
 
     Object.defineProperty(this, 'email', {
         get: function(){
-            return this._email.toLowerCase()
+            return this._email.toUpperCase()
         },
         set: function(value){
             this._email = value
@@ -22,6 +22,6 @@ function User(email, password){
 
 }
 
-const chai = new User("example@gmail.com", "chai")
+const chai = new User("chai@chai.com", "chai")
 
 console.log(chai.email);
