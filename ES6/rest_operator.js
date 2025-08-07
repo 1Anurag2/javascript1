@@ -1,3 +1,5 @@
+// Rest operator make remaining value in array formate 
+
 // function sum(){
 //     let total = 0; 
 //     console.log(arguments)    // [Arguments] { '0': 20, '1': 5, '2': 45, '3': 8 }
